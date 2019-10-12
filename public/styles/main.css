@@ -14,9 +14,11 @@
 .container--left {
     flex-flow: column;
     width: 50%;
+    padding: 20px;
 }
 
 .container--right{
+    flex-flow: column;
     width: 50%;
 }
 
@@ -25,15 +27,87 @@
     padding: 40px;
 }
 
+.container__title{
+    padding-bottom: 20px;
+}
+
 .mainForm__label{
-    margin: 0 90% 20px 10px;
+    margin: 0 90% 20px 0;
     font-size: 20px;
 }
 
 .mainForm__text{
-    margin-left: 10px;
-    margin-right: 20%;
+    margin: 10px 20% 10px 0;
     padding: 10px;
     width: 70%;
+    border: none;
+    border-bottom:  2px solid rgb(197, 197, 197);
+}
+
+.mainForm__text:focus{
+    outline: none;
+    border-bottom: 2px solid lightseagreen;
+}
+
+/* Pruebas de Slider */
+
+.mainForm__range{
+    -webkit-appearance: none;
+    padding: 20px 0;
+    width: 70%;
+    margin: 10px 20% 10px 0;
+}
+
+.mainForm__range:focus{
+    outline: none;
+}
+
+.mainForm__range::-webkit-slider-runnable-track {
+
+    height: 3px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #046374;
+    border-radius: 0px;
+  }
+
+.mainForm__range::-webkit-slider-thumb {
+    box-shadow: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 22px;
+    background: lightseagreen;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+
+/* Fin de la prueba */
+.mainForm__color{
+    margin: 10px 20% 10px 0;
+    
+}
+.mainForm__button{
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px 0;
+    width: 70%;
+    font-size: 15px;
+}
+
+.container__cars{
+    width: 100%;
+}
+
+.car{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: lightseagreen;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    width: 100%;
 }
 
