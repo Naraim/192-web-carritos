@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="/styles/main.css">
+    <title>Registra tu Carrito</title>
+</head>
+<body>
+    <h1 class="mainTitle">Registro de Carritos</h1>
+    <div class="container">
+        <div class="container container--left">
+            <h2>Añadir Carrito</h2>
+            <form class="mainForm">
+                <label for="form-name" class="mainForm__label">Nombre: </label>
+                <input type="text" name="name" id="form-name" placeholder="Escriba su nombre"  class="mainForm__text">
+                <label for="form-wheels" class="mainForm__label">Llantas: </label>
+                <input type="range" id="form-wheels" name="wheels" min="2" max="10" value="2" step="2" class="mainForm__range">
+                <label for="form-color" class="mainForm__label">Selecciona el color: </label>
+                <input type="color" id="form-color" name="color">
+                
+                <input type="submit" value="Enviar" class="mainForm__button">
+            </form>
+
+        </div>
+        <div class="container container--right">
+            <h2>Lista Carritos</h2>
+            <div class="container--cars">
+        
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="/public/scripts/home.js"></script> -->
+</body>
+</html>
