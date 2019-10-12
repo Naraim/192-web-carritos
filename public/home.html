@@ -12,9 +12,9 @@
     <div class="container">
         <div class="container container--left">
             <h2 class="container__title">Añadir Carrito</h2>
-            <form class="mainForm">
+            <form class="mainForm" action="">
                 <label for="form-brand" class="mainForm__label">Marca: </label>
-                <input type="text" name="name" id="form-name" placeholder="Marca del auto"  class="mainForm__text">
+                <input type="text" name="brand" id="form-name" placeholder="Marca del auto"  class="mainForm__text">
                 <label for="form-wheels" class="mainForm__label">Llantas: </label>
                 <input type="range" id="form-wheels" name="wheels" min="2" max="10" value="2" step="2" class="mainForm__range">
                 <label for="form-color" class="mainForm__label">Selecciona el color: </label>
@@ -32,16 +32,11 @@
         <div class="container container--right">
             <h2 class="container__title">Lista Carritos</h2>
             <div class="container__cars">
-                <div class="car">
-                    <p class="car__brand">Hyundai</p>
-                    <p class="car__wheels">4</p>
-                    <img src="/img/edit.svg" alt="" class="car__edit">
-                    <img src="/img/delete.svg" alt="" class="car__delete">
-                </div>
+                
             </div>
         </div>
     </div>
     
-    <!-- <script src="/scripts/home.js"></script> -->
+    <script src="/scripts/home.js"></script>
 </body>
 </html>
