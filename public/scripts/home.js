@@ -22,8 +22,35 @@ function refreshList(){
 
         });
 
+        //Delete vehicle
+        var supr = document.querySelectorAll('.car__delete');
+
+        supr.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+
+                var data = new URLSearchParams();
+    
+                data.append('index', index);
+    
+                fetch('/api/vehicle', {
+                    method: 'DELETE',
+                    body: data
+                })
+                .then(raw =>{
+                    return raw.json();
+                })
+                .then(elmDelete => {
+                    refreshList();
+                    console.log(elmDelete);
+                });
+            })
+
+        });
+
     });
 }
+
+refreshList();
 
 //Send info
 form.addEventListener('submit', () => {

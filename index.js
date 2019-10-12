@@ -19,7 +19,7 @@ app.get('/', (request, response) =>{
 app.get('/api/vehicle', (request, response) =>{
 
     response.send(vehicles);
-    console.log('Enviados')
+    console.log('send');
 
 });
 
@@ -29,6 +29,13 @@ app.post('/api/vehicle', (request, response) => {
     response.send({
         message: 'ok',
     });
+});
+
+app.delete('/api/vehicle', (request, response) =>{
+    vehicles.splice(request.body.index, 1);
+    response.send({
+        message: 'delete',
+    })
 });
 
 
